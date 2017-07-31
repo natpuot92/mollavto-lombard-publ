@@ -20,21 +20,23 @@
       <div class="page-header__tel">+7 922 183-12-52</div><a href="#" class="page-header__tel-btn">Заказать звонок</a>
       <div class="menu-btn"><a href="#" class="burger"></a></div>
     </div>
-    <div class="page-header main-nav">
-      <ul>
-        <li><a href="#page-1">Home</a></li>
-        <li><a href="#page-2">процесс получения займа</a></li>
-        <li><a href="#page-3">Преимущества</a></li>
-        <li><a href="#page-4">Ставки и условия</a></li>
-        <li><a href="#page-5">О компании</a></li>
-        <li><a href="#page-6">Условия займа</a></li>
-        <li><a href="#page-7">Лицензии и документы</a></li>
-        <li><a href="#page-8">Часто задаваемые вопросы</a></li>
-        <li><a href="#page-9">Отзывы клиентов</a></li>
-        <li><a href="#page-10">Контакты</a></li>
-      </ul>
-    </div>
   </header>
+  <div class="main-nav__blur hidden"></div>
+  <div class="page-header main-nav hidden">
+    <div class="main-nav__btn-close"></div>
+    <ul>
+      <li><a href="#page-1" class="main-nav__link">Home</a></li>
+      <li><a href="#page-2" class="main-nav__link">процесс получения займа</a></li>
+      <li><a href="#page-3" class="main-nav__link">Преимущества</a></li>
+      <li><a href="#page-4" class="main-nav__link">Ставки и условия</a></li>
+      <li><a href="#page-5" class="main-nav__link">О компании</a></li>
+      <li><a href="#page-6" class="main-nav__link">Условия займа</a></li>
+      <li><a href="#page-7" class="main-nav__link">Лицензии и документы</a></li>
+      <li><a href="#page-8" class="main-nav__link">Часто задаваемые вопросы</a></li>
+      <li><a href="#page-9" class="main-nav__link">Отзывы клиентов</a></li>
+      <li><a href="#page-10" class="main-nav__link">Контакты</a></li>
+    </ul>
+  </div>
   <div id="fullpage">
     <div class="section section1">
       <div class="container">
@@ -48,14 +50,10 @@
           <input type="tel" name="your-tel" placeholder="Телефон" class="section1__form-text section1__form-tel">
           <label class="checkbox-wrapper">
             <div class="checkbox-wrapper__checkbox">
-              <input type="checkbox" checked class="section1__form-checkbox">
+              <input type="checkbox" class="section1__form-checkbox">
               <div class="checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes checkbox-active">да</span></div>
             </div>
-            <div class="checkbox-wrapper__text">
-              <div class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных</a>
-              </div>
-              <div class="checkbox-wrapper__text-2">Ваши данные не будут переданы третьим лицам</div>
-            </div>
+            <div class="checkbox-wrapper__text"><span class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных </a></span><span class="checkbox-wrapper__text-2">Ваши данные не будут переданы третьим лицам</span></div>
           </label><a href="#" class="btn section1__form-btn">Звоните</a>
         </form>
         <div class="section1__features">
@@ -76,29 +74,41 @@
     </div>
     <div class="section section2">
       <div class="container">
-        <div class="section2__title-wrapper">
-          <div class="section__title section2__title">процесс получения займа</div>
-          <div class="section2__text">Три простых шага к получению нужной Вам денежной суммы</div><a href="#" class="btn section2__form-btn">Получить займ</a>
-        </div>
-        <div class="section2__item section2__item-3">
-          <div class="section2__item-icon section2__item-icon-3"></div>
-          <div class="section2__item-text-wrapper">
-            <div class="section2__item-digit">03</div>
-            <div class="section2__item-text">Приезжайте<br class="section2__item-text">за своими деньгами</div>
+        <div class="section2__container-wrapper">
+          <div class="section2__title-wrapper">
+            <div class="section__title section2__title">процесс получения займа</div>
+            <div class="section2__text">Три простых шага к получению нужной Вам денежной суммы</div><a href="#" class="btn section2__form-btn">Получить займ</a>
           </div>
-        </div>
-        <div class="section2__item section2__item-1">
-          <div class="section2__item-icon section2__item-icon-1"></div>
-          <div class="section2__item-text-wrapper">
-            <div class="section2__item-digit">01</div>
-            <div class="section2__item-text">Позвоните или оставьте<br class="section2__item-text">номер телефона</div>
+          <div class="section2__item section2__item-3">
+            <div class="section2__item-icon section2__item-icon-3"></div>
+            <div class="section2__item-text-wrapper">
+              <div class="section2__item-digit">03</div>
+              <div class="section2__item-text">Приезжайте<br class="section2__item-text">за своими деньгами</div>
+            </div>
           </div>
-        </div>
-        <div class="section2__item section2__item-2">
-          <div class="section2__item-icon section2__item-icon-2"></div>
-          <div class="section2__item-text-wrapper">
-            <div class="section2__item-digit">02</div>
-            <div class="section2__item-text">Узнайте решение<br class="section2__item-text">в течение 30 минут</div>
+          <div class="section2__items-wrapper">
+            <div class="section2__item section2__item-1">
+              <div class="section2__item-icon section2__item-icon-1"></div>
+              <div class="section2__item-text-wrapper">
+                <div class="section2__item-digit">01</div>
+                <div class="section2__item-text">Позвоните или оставьте<br class="section2__item-text">номер телефона</div>
+              </div>
+            </div>
+            <div class="section2__item section2__item-2">
+              <div class="section2__item-icon section2__item-icon-2"></div>
+              <div class="section2__item-text-wrapper">
+                <div class="section2__item-digit">02</div>
+                <div class="section2__item-text">Узнайте решение<br class="section2__item-text">в течение 30 минут</div>
+              </div>
+            </div>
+            <div class="section2__item section2__item-3 section2__item-3-mob">
+              <div class="section2__item-icon section2__item-icon-3">
+                <div class="section2__item-text-wrapper section2__item-text-wrapper-mob">
+                  <div class="section2__item-digit">03</div>
+                  <div class="section2__item-text">Приезжайте<br class="section2__item-text">за своими деньгами</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -125,27 +135,32 @@
             <div class="big-slider__slide-circle"></div><img src="../images/features-slide5.png" class="big-slider__slide-foto-5">
           </div>
         </div>
-        <div class="section3__min-slider">
-          <div class="min-slider__slide-1">
-            <div class="min-slider__icon min-slider__icon-1"><img src="../images/features-icon1.png"></div>
-            <div class="min-slider__text">Не требуем генеральной доверенности и договор купли-продажи</div>
+        <div class="section3__slider-counter-wrapper">
+          <div class="section3__min-slider">
+            <div class="min-slider__slide-1">
+              <div class="min-slider__icon min-slider__icon-1"><img src="../images/features-icon1.png" class="min-slider__slide-foto-1"></div>
+              <div class="min-slider__text">Не требуем генеральной доверенности и договор купли-продажи</div>
+            </div>
+            <div class="min-slider__slide-2">
+              <div class="min-slider__icon min-slider__icon-2"><img src="../images/features-icon2.png" class="min-slider__slide-foto-2"></div>
+              <div class="min-slider__text">Пересчет процентов<br class="min-slider__text">за пользование займом по дням</div>
+            </div>
+            <div class="min-slider__slide-3">
+              <div class="min-slider__icon min-slider__icon-3"><img src="../images/features-icon3.png" class="min-slider__slide-foto-3"></div>
+              <div class="min-slider__text">При заключении договора,<br class="min-slider__text">деньги наличными сразу</div>
+            </div>
+            <div class="min-slider__slide-4">
+              <div class="min-slider__icon min-slider__icon-4"><img src="../images/features-icon3.png" class="min-slider__slide-foto-4"></div>
+              <div class="min-slider__text">Высокая лояльность к клиентам</div>
+            </div>
+            <div class="min-slider__slide-5">
+              <div class="min-slider__icon min-slider__icon-5"><img src="../images/features-icon3.png" class="min-slider__slide-foto-5"></div>
+              <div class="min-slider__text">Работаем официально, состоим<br class="min-slider__text">на учете в ЦБ</div>
+            </div>
           </div>
-          <div class="min-slider__slide-2">
-            <div class="min-slider__icon min-slider__icon-2"><img src="../images/features-icon2.png"></div>
-            <div class="min-slider__text">Пересчет процентов<br class="min-slider__text">за пользование займом по дням</div>
+          <div class="section3__counter"><span class="section3__counter-big">01</span> <span class="section3__counter-min"></span>
           </div>
-          <div class="min-slider__slide-3">
-            <div class="min-slider__icon min-slider__icon-3"><img src="../images/features-icon3.png"></div>
-            <div class="min-slider__text">При заключении договора,<br class="min-slider__text">деньги наличными сразу</div>
-          </div>
-          <div class="min-slider__slide-4">
-            <div class="min-slider__icon min-slider__icon-4"><img src="../images/features-icon3.png"></div>
-            <div class="min-slider__text">Высокая лояльность к клиентам</div>
-          </div>
-          <div class="min-slider__slide-5">
-            <div class="min-slider__icon min-slider__icon-5"><img src="../images/features-icon3.png"></div>
-            <div class="min-slider__text">Работаем официально, состоим<br class="min-slider__text">на учете в ЦБ</div>
-          </div>
+          <div class="section3-slider__arrows"></div>
         </div>
       </div>
     </div>
@@ -153,8 +168,8 @@
       <div class="container">
         <div class="section__title section4__title">ставки, условия</div>
         <div class="section4__text">Меньше сроки - меньше процент!</div>
-        <div class="section4__seven"></div>
         <div class="section4__percent">
+          <div class="section4__seven"></div>
           <div class="section4__percent-text-1">Низкий процент ставок!</div>
           <div class="section4__percent-text-2">Меньше сроки меньше процент!</div>
         </div>
@@ -188,24 +203,21 @@
           <div>Кредиты под залог автомобиля выдают многие автоломбарды, но немногие предоставляют кредиты с возможностью пользования автомобилем.</div>
           <div>Вы сможете пользоваться собственным авто все время действия договора по программе " Авто остается у Вас". Не нужно расставаться с собственным авто, не нужно оставлять его на стоянке автоломбарда, переживать за его сохранность, надеясь на порядочность кредитора.</div>
           <div>Используйте свой автомобиль с максимальной выгодой для себя и своих близких.</div>
-        </div><a href="#" class="btn section5__btn">Получить займм</a>
+        </div><a href="#" class="btn section5__btn">Получить займ</a>
       </div>
     </div>
     <div class="section section6">
       <div class="container">
         <div class="section__title section6__title">условия займа</div>
-        <div class="section6__text">
-           
-          Необходимые требования для получения займа
-        </div>
+        <div class="section6__text">Необходимые требования для получения займа</div>
         <div class="section6__content">
-          <div class="section6__content-block">
+          <div class="section6__content-block section6__content-block-1">
             <div class="section6__content-block-icon section6__content-block-icon-1"></div>
             <div class="section6__content-block-title">Требования к заемщику</div>
             <ul>
               <li>Гражданство РФ</li>
               <li>Заемщик является собственником автотранспортного средства</li>
-              <li>Место постоянного проживания и прописка в Свердловской области</li>
+              <li>Место постоянного проживания<br>и прописка в Свердловской области</li>
               <li>Отсутствие исполнительных производств</li>
             </ul>
           </div>
@@ -219,24 +231,24 @@
               <li>Отсутствие арестов и ограничений</li>
             </ul>
           </div>
-          <div class="section__passport">
-            <div class="section__passport-wrapper">
-              <div class="section__passport-item">
-                <div class="section__passport-icon section4__passport-icon-1"></div>
-                <div class="section__passport-text">Паспорт гражданина РФ</div>
-              </div>
-              <div class="section__passport-item">
-                <div class="section__passport-icon section4__passport-icon-2"></div>
-                <div class="section__passport-text">Паспорт технического средства (ПТС)</div>
-              </div>
-              <div class="section__passport-item">
-                <div class="section__passport-icon section4__passport-icon-3"></div>
-                <div class="section__passport-text">Свидетельство о регистрации транспортного средства</div>
-              </div>
-              <div class="section__passport-item">
-                <div class="section__passport-icon section4__passport-icon-4"></div>
-                <div class="section__passport-text">Комплект ключей и брелоков</div>
-              </div>
+        </div>
+        <div class="section__passport">
+          <div class="section__passport-wrapper">
+            <div class="section__passport-item">
+              <div class="section__passport-icon section4__passport-icon-1"></div>
+              <div class="section__passport-text">Паспорт гражданина РФ</div>
+            </div>
+            <div class="section__passport-item">
+              <div class="section__passport-icon section4__passport-icon-2"></div>
+              <div class="section__passport-text">Паспорт технического средства (ПТС)</div>
+            </div>
+            <div class="section__passport-item">
+              <div class="section__passport-icon section4__passport-icon-3"></div>
+              <div class="section__passport-text">Свидетельство о регистрации транспортного средства</div>
+            </div>
+            <div class="section__passport-item">
+              <div class="section__passport-icon section4__passport-icon-4"></div>
+              <div class="section__passport-text">Комплект ключей и брелоков</div>
             </div>
           </div>
         </div>
@@ -244,134 +256,281 @@
     </div>
     <div class="section section7">
       <div class="container">
-        <div class="section__title">лицензии и документы</div>
-        <div class="section7__text">Взяв у нас займ, Вы ни чем не рискуете. Мы работаем открыто!</div><a href="#" class="btn section7__btn">Получить займм</a>
-        <div class="section7__license-wrapper">
-          <div class="section7__license section7__license-1"></div>
-          <div class="section7__license section7__license-2"></div>
-          <div class="section7__license section7__license-3"></div>
-          <div class="section7__license section7__license-4"></div>
-          <div class="section7__license section7__license-5"></div>
-          <div class="section7__license section7__license-6"></div>
-          <div class="section7__license section7__license-7"></div>
-          <div class="section7__license section7__license-8"></div>
-        </div>
+        <div class="section__title section7__title">лицензии и документы</div>
+        <div class="section7__text">Взяв у нас займ, Вы ни чем не рискуете. Мы работаем открыто!</div><a href="#" class="btn section7__btn">Получить займ</a>
+        <div class="section7__license-wrapper"><a href="./images/license-1.png" rel="lightbox-group" class="funcybox-section7"><img src="./images/license-1.png"></a><a href="./images/license-2.png" rel="lightbox-group" class="funcybox-section7"><img src="./images/license-2.png"></a><a href="./images/license-3.png" rel="lightbox-group" class="funcybox-section7"><img src="./images/license-3.png"></a><a href="./images/license-4.png" rel="lightbox-group" class="funcybox-section7"><img src="./images/license-4.png"></a><a href="./images/license-5.png" rel="lightbox-group" class="funcybox-section7"><img src="./images/license-5.png"></a><a href="./images/license-6.png" rel="lightbox-group" class="funcybox-section7"><img src="./images/license-6.png"></a><a href="./images/license-7.png" rel="lightbox-group" class="funcybox-section7"><img src="./images/license-7.png"></a><a href="./images/license-8-b.jpg" rel="lightbox-group" class="funcybox-section7"><img src="./images/license-8.png"></a></div>
       </div>
     </div>
     <div class="section section8">
-      <div class="container">
-        <div class="section__title">часто задаваемые вопросы</div>
+      <div class="container section8-container">
+        <div class="section__title section8__title">часто задаваемые вопросы</div>
         <div class="section8__ask-wrapper">
-          <div class="section8__ask section8__ask-1">1. Сколько денег я получу за свой автомобиль (процент от стоимости авто)?</div>
-          <div class="section8__ask section8__ask-2">2. Если на руках дубликат ПТС (потерян ПТС, кончилось место в ПТС т.д.)?</div>
-          <div class="section8__ask section8__ask-3">3. Как быстро я смогу получить ПТС после оплаты займа?</div>
-          <div class="section8__ask section8__ask-4">4. Нужно ли приезжать в офис на автомобиле? Что, если автомобиль не на ходу?</div>
-          <div class="section8__ask section8__ask-5">5. Нужно ли оформлять на Молл-Авто ломбард генеральную доверенность?</div>
-          <div class="section8__ask section8__ask-6">6. Нужно ли выезжать еще куда-то для заключения договора?</div>
-          <div class="section8__ask section8__ask-7">7. Что будет при просрочке платежей?</div>
-          <div class="section8__ask section8__ask-8">8. При просрочке платежей смогут забрать мое авто?</div>
-          <div class="section8__ask section8__ask-9">9. Если долго не вносить платежи (месяц, два) или нет денег для того, чтобы вносить платежи регулярно, что будет?</div>
-          <div class="section8__ask section8__ask-10">10. Какие документы могут быть необходимы для получения заёмных денег под ПТС?</div>
-          <div class="section8__ask section8__ask-11">11. Если я использую автомобиль по доверенности, могу ли я получить деньги, заложив ПТС?</div>
-          <div class="section8__ask section8__ask-12">12. Автомобиль взят в кредит, ПТС находится в банке. Можно ли в таком случае взять займ?</div>
-          <div class="section8__ask section8__ask-13">13. После оплаты суммы займа возникают ли скрытые проценты?</div>
-          <div class="section8__ask section8__ask-14">14. Ставится ли какая-либо отметка о залоге в ПТС?</div>
-          <div class="section8__ask section8__ask-15">15. Какие документы после заключения сделки останутся в Молл-Автоломбард?</div>
-          <div class="section8__ask section8__ask-16">16. У меня нет второго комплекта ключей?</div>
-          <div class="section8__ask section8__ask-17">17. Я могу получить займ если на автомобиль наложен арест или запрет на регистрационные действия?</div>
+          <div class="section8__ask-wrapper-1"><a href="#" data-slide="0" class="section8__ask section8__ask-1">1. Сколько денег я получу за свой автомобиль (процент от стоимости авто)?</a><a href="#" data-slide="1" class="section8__ask section8__ask-2">2. Если на руках дубликат ПТС (потерян ПТС, кончилось место в ПТС т.д.)?</a><a href="#" data-slide="2" class="section8__ask section8__ask-3">3. Как быстро я смогу получить ПТС после оплаты займа?</a><a href="#" data-slide="3" class="section8__ask section8__ask-4">4. Нужно ли приезжать в офис на автомобиле? Что, если автомобиль не на ходу?</a><a href="#" data-slide="4" class="section8__ask section8__ask-5">5. Нужно ли оформлять на Молл-Авто ломбард генеральную доверенность?</a><a href="#" data-slide="5" class="section8__ask section8__ask-6">6. Нужно ли выезжать еще куда-то для заключения договора?</a><a href="#" data-slide="6" class="section8__ask section8__ask-7">7. Что будет при просрочке платежей?</a><a href="#" data-slide="7" class="section8__ask section8__ask-8">8. При просрочке платежей смогут забрать мое авто?</a><a href="#" data-slide="8" class="section8__ask section8__ask-9">9. Если долго не вносить платежи (месяц, два) или нет денег для того, чтобы вносить платежи регулярно, что будет?</a></div>
+          <div class="section8__ask-wrapper-2"><a href="#" data-slide="9" class="section8__ask section8__ask-10">10. Какие документы могут быть необходимы для получения заёмных денег под ПТС?</a><a href="#" data-slide="10" class="section8__ask section8__ask-11">11. Если я использую автомобиль по доверенности, могу ли я получить деньги, заложив ПТС?</a><a href="#" data-slide="11" class="section8__ask section8__ask-12">12. Автомобиль взят в кредит, ПТС находится в банке. Можно ли в таком случае взять займ?</a><a href="#" data-slide="12" class="section8__ask section8__ask-13">13. После оплаты суммы займа возникают ли скрытые проценты?</a><a href="#" data-slide="13" class="section8__ask section8__ask-14">14. Ставится ли какая-либо отметка о залоге в ПТС?</a><a href="#" data-slide="14" class="section8__ask section8__ask-15">15. Какие документы после заключения сделки останутся в Молл-Автоломбард?</a><a href="#" data-slide="15" class="section8__ask section8__ask-16">16. У меня нет второго комплекта ключей?</a><a href="#" data-slide="16" class="section8__ask section8__ask-17">17. Я могу получить займ если на автомобиль наложен арест или запрет на регистрационные действия?</a></div>
         </div>
         <div class="section8__your-ask">
-          <div class="section8__your-ask-text">Если не нашли что искали Вы можете задать свой вопрос</div><a href="#" class="btn section8__btn"></a>Задать вопрос
+          <div class="section8__your-ask-text">Если не нашли что искали<br class="section8__your-ask-text-br">Вы можете задать свой вопрос</div><a href="#" class="btn section8__btn">Задать вопрос</a>
         </div>
       </div>
     </div>
     <div class="section section9">
       <div class="container">
-        <div class="section__title">отзывы клиентов о работе с нами</div>
+        <div class="section__title section9__title">отзывы клиентов о работе с нами</div>
         <div class="section9__slider">
           <div class="section9__slide section9__slide-1">
-            <div class="section9__slide-icon"></div>
             <div class="section9__slide-wrapper">
-              <div class="section9__slide-title">Вася</div>
-              <div class="section9__slide-text">
-                <p>Кредиты под залог автомобиля выдают многие автоломбарды, но немногие предоставляют кредиты с возможностью пользования автомобилем. Вы сможете пользоваться собственным авто все время действия договора по программе " Авто остается у Вас".</p>
-                <p>Не нужно расставаться с собственным авто, не нужно оставлять его на стоянке автоломбарда, переживать за его сохранность, надеясь на порядочность кредитора. Используйте свой автомобиль с максимальной выгодой для себя и своих близких.</p>
+              <div class="section9__slide-icon"></div>
+              <div class="section9__slide-text-wrapper">
+                <div class="section9__slide-title">Вася</div>
+                <div class="section9__slide-text">
+                  <p>Кредиты под залог автомобиля выдают многие автоломбарды, но немногие предоставляют кредиты с возможностью пользования автомобилем. Вы сможете пользоваться собственным авто все время действия договора по программе " Авто остается у Вас".</p>
+                  <p>Не нужно расставаться с собственным авто, не нужно оставлять его на стоянке автоломбарда, переживать за его сохранность, надеясь на порядочность кредитора. Используйте свой автомобиль с максимальной выгодой для себя и своих близких.</p>
+                </div>
               </div>
             </div>
           </div>
           <div class="section9__slide section9__slide-2">
-            <div class="section9__slide-icon"></div>
             <div class="section9__slide-wrapper">
-              <div class="section9__slide-title">Вася</div>
-              <div class="section9__slide-text">Текст</div>
+              <div class="section9__slide-icon"></div>
+              <div class="section9__slide-text-wrapper">
+                <div class="section9__slide-title">Вася</div>
+                <div class="section9__slide-text">Текст2</div>
+              </div>
             </div>
           </div>
           <div class="section9__slide section9__slide-2">
-            <div class="section9__slide-icon"></div>
             <div class="section9__slide-wrapper">
-              <div class="section9__slide-title">Вася</div>
-              <div class="section9__slide-text">Текст</div>
+              <div class="section9__slide-icon"></div>
+              <div class="section9__slide-text-wrapper">
+                <div class="section9__slide-title">Вася</div>
+                <div class="section9__slide-text">Текст3</div>
+              </div>
             </div>
           </div>
           <div class="section9__slide section9__slide-2">
-            <div class="section9__slide-icon"></div>
             <div class="section9__slide-wrapper">
-              <div class="section9__slide-title">Вася</div>
-              <div class="section9__slide-text">Текст</div>
+              <div class="section9__slide-icon"></div>
+              <div class="section9__slide-text-wrapper">
+                <div class="section9__slide-title">Вася</div>
+                <div class="section9__slide-text">Текст4</div>
+              </div>
             </div>
           </div>
           <div class="section9__slide section9__slide-2">
-            <div class="section9__slide-icon"></div>
             <div class="section9__slide-wrapper">
-              <div class="section9__slide-title">Вася</div>
-              <div class="section9__slide-text">Текст</div>
+              <div class="section9__slide-icon"></div>
+              <div class="section9__slide-text-wrapper">
+                <div class="section9__slide-title">Вася</div>
+                <div class="section9__slide-text">Текст5</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="section9__counter"><span class="section9__counter-big">01</span> <span class="section9__counter-min">| 05</span>
-        </div>
-        <div class="section9__slider-controls">
-          <div class="section9__slider-control-left">Назад</div>
-          <div class="section9__slider-control-right">вперед</div>
-        </div>
+        <div class="section9__counter"><span class="section9__counter-big">01</span> <span class="section9__counter-min"></span>
+          <div class="section9-slider__arrows"></div>
+        </div><a href="#" class="btn section9__btn">Оставить отзыв</a>
       </div>
     </div>
     <div class="section section10">
-      <div class="container">
+      <div class="container section10__container">
         <div class="section10__wrapper-desc">
-          <div class="section__title">контакты</div>
-          <div class="section10__text">Вы можете оставить Ваши контакты и мы сами свяжемся с Вами</div><a href="#" class="btn section10__btn"></a>Оставить контакты
+          <div class="section__title section10__title">контакты</div>
+          <div class="section10__text">Вы можете оставить Ваши контакты и мы сами свяжемся с Вами</div><a href="#" class="btn section10__btn">Оставить контакты</a>
           <div class="section10__location"><span class="section10__location-icon"></span>454048, г. Челябинск, ул. Образцова, 25</div>
           <div class="section10__time"><span class="section10__time-icon"></span>с пн.-пт. с 9-00 до 19-00</div>
           <div class="section10__tel"><span class="section10__tel-icon"></span>+7 922 183-12-52</div>
           <div class="section10__email"><span class="section10__email-icon"></span><a href="mailto:moll.avtolombard@mail.ru">moll.avtolombard@mail.ru</a></div>
         </div>
-        <div class="section10__wrapper-map"></div>
       </div>
+      <div id="map" class="section10__map"></div>
       <div class="section10__footer">
-        <div class="section10__footer-copyright">© Mollavtolombard 2017</div><a href="#" class="section10__footer-person-data">Обработка персональных данных</a>
+        <div class="section10__footer-wrapper">
+          <div class="section10__footer-copyright">© Mollavtolombard 2017</div><a href="#" class="section10__footer-person-data">Обработка персональных данных</a>
+        </div>
         <div class="social-links"><a href="#" class="social-links__google"></a><a href="#" class="social-links__mail"></a><a href="#" class="social-links__facebook"></a><a href="#" class="social-links__vk"></a><a href="#" class="social-links__twitter"></a></div><a href="#" class="chile"></a>
       </div>
     </div>
   </div>
   <div class="popup__phone hidden">
     <div class="overlay">
-      <div class="popup__phone-container"><a href="#" class="popup__phone-btn-close"></a>
-        <div class="popup__phone-title">Закажите звонок</div>
-        <div class="popup__phone-text">Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут</div>
-        <form action="#" method="#" class="popup__phone-form"></form>
-        <input type="text" name="your-name" placeholder="Имя">
-        <input type="tel" name="your-tel" placeholder="Телефон">
-        <div class="checkbox-wrapper">
+      <div class="popup__container">
+        <div class="popup__btn-close popup__btn-close-phone"></div>
+        <div class="popup__title popup__phone-title">Закажите звонок</div>
+        <div class="popup__text popup__phone-text">Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут</div>
+        <form action="#" method="#" class="popup__phone-form">
+          <input type="text" name="phone-name" placeholder="Имя" class="popup__phone-form-input">
+          <input type="tel" name="phone-phone" placeholder="Телефон" class="popup__phone-form-input">
+        </form>
+        <label class="checkbox-wrapper">
           <div class="checkbox-wrapper__checkbox">
-            <input type="checkbox" checked>
-            <div class="checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes checkbox-active">да</span><span class="checkbox__no">нет</span></div>
+            <input type="checkbox" class="section1__form-checkbox">
+            <div class="checkbox popup__checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes checkbox-active">да</span></div>
           </div>
-          <div class="checkbox-wrapper__text">
-            <div class="checkbox-wrapper__text-1">Даю согласие на<a href="#">Обработку персональных данных</a></div>
+          <div class="checkbox-wrapper__text checkbox-wrapper__text-popup">
+            <div class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных</a>
+            </div>
             <div class="checkbox-wrapper__text-2">Ваши данные не будут переданы третьим лицам</div>
           </div>
-        </div><a href="#" class="btn section1__form-btn">Заказать звоните</a>
+        </label><a href="#" class="btn popup__btn">Заказать звонок</a>
+      </div>
+    </div>
+  </div>
+  <div class="popup__ask hidden">
+    <div class="overlay">
+      <div class="popup__container">
+        <div class="popup__btn-close popup__btn-close-ask"></div>
+        <div class="popup__title popup__ask-title">Задайте вопрос</div>
+        <div class="popup__text popup__ask-text">Если не нашли что искали, Вы можете задать свой вопрос, указав имя и почту. И мы сразу ответим Вам!</div>
+        <form action="#" method="#" class="popup__phone-form">
+          <input type="text" name="ask-name" placeholder="Имя" class="popup__phone-form-input">
+          <input type="email" name="ask-emain" placeholder="E-mail" class="popup__phone-form-input">
+          <textarea name="ask-area" class="popup__phone-form-textarea"></textarea>
+        </form>
+        <label class="checkbox-wrapper">
+          <div class="checkbox-wrapper__checkbox">
+            <input type="checkbox" class="section1__form-checkbox">
+            <div class="checkbox popup__checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes checkbox-active">да</span></div>
+          </div>
+          <div class="checkbox-wrapper__text checkbox-wrapper__text-popup">
+            <div class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных</a>
+            </div>
+            <div class="checkbox-wrapper__text-2">Ваши данные не будут переданы третьим лицам</div>
+          </div>
+        </label><a href="#" class="btn popup__btn">Задать вопрос</a>
+      </div>
+    </div>
+  </div>
+  <div class="popup__review hidden">
+    <div class="overlay">
+      <div class="popup__container">
+        <div class="popup__btn-close popup__btn-close-review"></div>
+        <div class="popup__title popup__review-title">Оставьте ваш отзыв</div>
+        <div class="popup__text popup__review-text">Если Вы воспользовались нашими услугами, напишите отзыв о работе с нами!</div>
+        <form action="#" method="#" class="popup__phone-form">
+          <input type="text" name="review-name" placeholder="Имя" class="popup__phone-form-input">
+          <textarea name="review-area" class="popup__phone-form-textarea"></textarea>
+        </form>
+        <label class="checkbox-wrapper">
+          <div class="checkbox-wrapper__checkbox">
+            <input type="checkbox" checked class="section1__form-checkbox">
+            <div class="checkbox popup__checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes checkbox-active">да</span></div>
+          </div>
+          <div class="checkbox-wrapper__text checkbox-wrapper__text-popup">
+            <div class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных</a>
+            </div>
+            <div class="checkbox-wrapper__text-2">Ваши данные не будут переданы третьим лицам</div>
+          </div>
+        </label><a href="#" class="btn popup__btn">Оставить отзыв</a>
+      </div>
+    </div>
+  </div>
+  <div class="popup__success-phone hidden">
+    <div class="overlay">
+      <div class="popup__container popup__success-container">
+        <div class="popup__btn-close popup__btn-close-success-phone"></div>
+        <div class="popup__success-img"></div>
+        <div class="popup__title popup__success-title">Благодарим за обращение!</div>
+        <div class="popup__text popup__success-text">Ваши данные отправлены, мы свяжемся с Вами в течении 2 минут</div>
+      </div>
+    </div>
+  </div>
+  <div class="popup__success-ask hidden">
+    <div class="overlay">
+      <div class="popup__container popup__success-container popup__success-container-ask">
+        <div class="popup__btn-close popup__btn-close-success-ask"></div>
+        <div class="popup__success-img"></div>
+        <div class="popup__title popup__success-title">Благодарим за обращение!</div>
+        <div class="popup__text popup__success-text">Ваш вопрос отправлен, мы ответим Вам как только увидим письмо</div>
+      </div>
+    </div>
+  </div>
+  <div class="popup__success-review hidden">
+    <div class="overlay">
+      <div class="popup__container popup__success-container popup__success-container-review">
+        <div class="popup__btn-close popup__btn-close-success-review"></div>
+        <div class="popup__success-img"></div>
+        <div class="popup__title popup__success-title">Благодарим за отзыв!</div>
+        <div class="popup__text popup__success-text popup__success-text-review">Нам очень важна обратная связь клиентов. Ваш отзыв будет опубликован!</div>
+      </div>
+    </div>
+  </div>
+  <div class="popup__slider hidden">
+    <div class="overlay">
+      <div class="popup__container popup__container-slider">
+        <div class="popup__btn-close popup__btn-close-slider"></div>
+        <div class="popup__slids">
+          <div class="popup__slid popup__slid-1">
+            <div class="popup__slider-title">1. Сколько денег я получу за свой автомобиль (процент от стоимости авто)?</div>
+            <div class="popup__slider-text">текст</div>
+          </div>
+          <div class="popup__slid popup__slid-2">
+            <div class="popup__slider-title">2. Если на руках дубликат ПТС (потерян ПТС, кончилось место в ПТС т.д.)?</div>
+            <div class="popup__slider-text">текст2</div>
+          </div>
+          <div class="popup__slid popup__slid-3">
+            <div class="popup__slider-title">3. Как быстро я смогу получить ПТС после оплаты займа?</div>
+            <div class="popup__slider-text">текст3</div>
+          </div>
+          <div class="popup__slid popup__slid-4">
+            <div class="popup__slider-title">4. Нужно ли приезжать в офис на автомобиле? Что, если автомобиль не на ходу?</div>
+            <div class="popup__slider-text">текст4</div>
+          </div>
+          <div class="popup__slid popup__slid-5">
+            <div class="popup__slider-title">5. Нужно ли оформлять на Молл-Авто ломбард генеральную доверенность?</div>
+            <div class="popup__slider-text">текст5</div>
+          </div>
+          <div class="popup__slid popup__slid-6">
+            <div class="popup__slider-title">6. Нужно ли выезжать еще куда-то для заключения договора?</div>
+            <div class="popup__slider-text">текст6</div>
+          </div>
+          <div class="popup__slid popup__slid-7">
+            <div class="popup__slider-title">7. Что будет при просрочке платежей?</div>
+            <div class="popup__slider-text">Мы всегда стараемся быть лояльными к нашим клиентам, поэтому, хотя при просрочке платежа и начисляются пени в размере 1,5% в день, в большинстве случаев мы решаем проблему с клиентом индивидуально и не накладываем штрафы. Бонусом сможет стать то, что вы предупредите заранее о том, что не сможете произвести платеж в назначенное время. А что бы исключить начисление пени можете поставить автомобиль на нашу охраняемую</div>
+          </div>
+          <div class="popup__slid popup__slid-8">
+            <div class="popup__slider-title">8. При просрочке платежей смогут забрать мое авто?</div>
+            <div class="popup__slider-text">текст8</div>
+          </div>
+          <div class="popup__slid popup__slid-9">
+            <div class="popup__slider-title">9. Если долго не вносить платежи (месяц, два) или нет денег для того, чтобы вносить платежи регулярно, что будет?</div>
+            <div class="popup__slider-text">текст9</div>
+          </div>
+          <div class="popup__slid popup__slid-10">
+            <div class="popup__slider-title">10. Какие документы могут быть необходимы для получения заёмных денег под ПТС?</div>
+            <div class="popup__slider-text">текст10</div>
+          </div>
+          <div class="popup__slid popup__slid-11">
+            <div class="popup__slider-title">11. Если я использую автомобиль по доверенности, могу ли я получить деньги, заложив ПТС?</div>
+            <div class="popup__slider-text">текст11</div>
+          </div>
+          <div class="popup__slid popup__slid-12">
+            <div class="popup__slider-title">12. Автомобиль взят в кредит, ПТС находится в банке. Можно ли в таком случае взять займ?</div>
+            <div class="popup__slider-text">текст12</div>
+          </div>
+          <div class="popup__slid popup__slid-13">
+            <div class="popup__slider-title">13. После оплаты суммы займа возникают ли скрытые проценты?</div>
+            <div class="popup__slider-text">текст13</div>
+          </div>
+          <div class="popup__slid popup__slid-14">
+            <div class="popup__slider-title">14. Ставится ли какая-либо отметка о залоге в ПТС?</div>
+            <div class="popup__slider-text">текст14</div>
+          </div>
+          <div class="popup__slid popup__slid-15">
+            <div class="popup__slider-title">15. Какие документы после заключения сделки останутся в Молл-Автоломбард?</div>
+            <div class="popup__slider-text">текст15</div>
+          </div>
+          <div class="popup__slid popup__slid-16">
+            <div class="popup__slider-title">16. У меня нет второго комплекта ключей?</div>
+            <div class="popup__slider-text">текст16</div>
+          </div>
+          <div class="popup__slid popup__slid-17">
+            <div class="popup__slider-title">17. Я могу получить займ если на автомобиль наложен арест или запрет на регистрационные действия?</div>
+            <div class="popup__slider-text">текст17</div>
+          </div>
+        </div>
+        <div class="popup__slider__counter"><span class="popup__slider__counter-big">01</span> <span class="popup__slider__counter-min"></span>
+        </div>
+        <div class="popup-slider__arrows"></div>
       </div>
     </div>
   </div>
