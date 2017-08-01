@@ -45,16 +45,17 @@
           <div class="section1__title2">Автомобиль остается у Вас</div>
         </div>
         <div class="section1__text">Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут</div>
-        <form action="#" method="#" class="section1__form">
-          <input type="text" name="your-name" placeholder="Имя" class="section1__form-text">
-          <input type="tel" name="your-tel" placeholder="Телефон" class="section1__form-text section1__form-tel">
+        <form action="#" method="#" id="section1__form" class="section1__form">
+          <input type="text" name="your__name" placeholder="Имя" class="section1__form-text">
+          <input type="tel" name="your__tel" placeholder="Телефон" class="section1__form-text section1__form-tel">
           <label class="checkbox-wrapper">
             <div class="checkbox-wrapper__checkbox">
-              <input type="checkbox" class="section1__form-checkbox">
+              <input type="checkbox" name="section1__checkbox" class="section1__form-checkbox">
               <div class="checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes checkbox-active">да</span></div>
             </div>
             <div class="checkbox-wrapper__text"><span class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных </a></span><span class="checkbox-wrapper__text-2">Ваши данные не будут переданы третьим лицам</span></div>
-          </label><a href="#" class="btn section1__form-btn">Звоните</a>
+          </label>
+          <button type="submit" class="btn section1__form-btn">Звоните</button>
         </form>
         <div class="section1__features">
           <div class="section1__features-item">
@@ -358,21 +359,22 @@
         <div class="popup__btn-close popup__btn-close-phone"></div>
         <div class="popup__title popup__phone-title">Закажите звонок</div>
         <div class="popup__text popup__phone-text">Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут</div>
-        <form action="#" method="#" class="popup__phone-form">
-          <input type="text" name="phone-name" placeholder="Имя" class="popup__phone-form-input">
-          <input type="tel" name="phone-phone" placeholder="Телефон" class="popup__phone-form-input">
-        </form>
-        <label class="checkbox-wrapper">
-          <div class="checkbox-wrapper__checkbox">
-            <input type="checkbox" class="section1__form-checkbox">
-            <div class="checkbox popup__checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes checkbox-active">да</span></div>
-          </div>
-          <div class="checkbox-wrapper__text checkbox-wrapper__text-popup">
-            <div class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных</a>
+        <form action="#" method="#" id="popup__phone-form" class="popup__phone-form">
+          <input type="text" name="phone__name" placeholder="Имя" class="popup__phone-form-input">
+          <input type="tel" name="phone__tel" placeholder="Телефон" class="popup__phone-form-input">
+          <label class="checkbox-wrapper">
+            <div class="checkbox-wrapper__checkbox">
+              <input type="checkbox" id="popup__phone__checkbox" name="popup__phone__checkbox" class="section1__form-checkbox">
+              <div class="checkbox popup__checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes checkbox-active">да</span></div>
             </div>
-            <div class="checkbox-wrapper__text-2">Ваши данные не будут переданы третьим лицам</div>
-          </div>
-        </label><a href="#" class="btn popup__btn">Заказать звонок</a>
+            <div class="checkbox-wrapper__text checkbox-wrapper__text-popup">
+              <div class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных</a>
+              </div>
+              <div class="checkbox-wrapper__text-2">Ваши данные не будут переданы третьим лицам</div>
+            </div>
+          </label>
+          <button type="submit" class="btn popup__btn">Заказать звонок</button>
+        </form>
       </div>
     </div>
   </div>
@@ -382,22 +384,23 @@
         <div class="popup__btn-close popup__btn-close-ask"></div>
         <div class="popup__title popup__ask-title">Задайте вопрос</div>
         <div class="popup__text popup__ask-text">Если не нашли что искали, Вы можете задать свой вопрос, указав имя и почту. И мы сразу ответим Вам!</div>
-        <form action="#" method="#" class="popup__phone-form">
-          <input type="text" name="ask-name" placeholder="Имя" class="popup__phone-form-input">
-          <input type="email" name="ask-emain" placeholder="E-mail" class="popup__phone-form-input">
-          <textarea name="ask-area" class="popup__phone-form-textarea"></textarea>
-        </form>
-        <label class="checkbox-wrapper">
-          <div class="checkbox-wrapper__checkbox">
-            <input type="checkbox" class="section1__form-checkbox">
-            <div class="checkbox popup__checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes checkbox-active">да</span></div>
-          </div>
-          <div class="checkbox-wrapper__text checkbox-wrapper__text-popup">
-            <div class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных</a>
+        <form action="#" method="#" id="popup__ask-form" class="popup__phone-form">
+          <input type="text" name="ask__name" placeholder="Имя" class="popup__phone-form-input">
+          <input type="email" name="ask__email" placeholder="E-mail" class="popup__phone-form-input">
+          <textarea name="ask__area" class="popup__phone-form-textarea"></textarea>
+          <label class="checkbox-wrapper">
+            <div class="checkbox-wrapper__checkbox">
+              <input type="checkbox" id="popup__ask__checkbox" name="popup__ask__checkbox" class="section1__form-checkbox">
+              <div class="checkbox popup__checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes checkbox-active">да</span></div>
             </div>
-            <div class="checkbox-wrapper__text-2">Ваши данные не будут переданы третьим лицам</div>
-          </div>
-        </label><a href="#" class="btn popup__btn">Задать вопрос</a>
+            <div class="checkbox-wrapper__text checkbox-wrapper__text-popup">
+              <div class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных</a>
+              </div>
+              <div class="checkbox-wrapper__text-2">Ваши данные не будут переданы третьим лицам</div>
+            </div>
+          </label>
+          <button type="submit" href="#" class="btn popup__btn">Задать вопрос</button>
+        </form>
       </div>
     </div>
   </div>
@@ -407,21 +410,22 @@
         <div class="popup__btn-close popup__btn-close-review"></div>
         <div class="popup__title popup__review-title">Оставьте ваш отзыв</div>
         <div class="popup__text popup__review-text">Если Вы воспользовались нашими услугами, напишите отзыв о работе с нами!</div>
-        <form action="#" method="#" class="popup__phone-form">
-          <input type="text" name="review-name" placeholder="Имя" class="popup__phone-form-input">
-          <textarea name="review-area" class="popup__phone-form-textarea"></textarea>
-        </form>
-        <label class="checkbox-wrapper">
-          <div class="checkbox-wrapper__checkbox">
-            <input type="checkbox" checked class="section1__form-checkbox">
-            <div class="checkbox popup__checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes checkbox-active">да</span></div>
-          </div>
-          <div class="checkbox-wrapper__text checkbox-wrapper__text-popup">
-            <div class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных</a>
+        <form action="#" method="#" id="popup__review-form" class="popup__phone-form">
+          <input type="text" name="review__name" placeholder="Имя" class="popup__phone-form-input">
+          <textarea name="review__area" class="popup__phone-form-textarea"></textarea>
+          <label class="checkbox-wrapper">
+            <div class="checkbox-wrapper__checkbox">
+              <input type="checkbox" id="popup__review__checkbox" name="popup__review__checkbox" class="section1__form-checkbox">
+              <div class="checkbox popup__checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes checkbox-active">да</span></div>
             </div>
-            <div class="checkbox-wrapper__text-2">Ваши данные не будут переданы третьим лицам</div>
-          </div>
-        </label><a href="#" class="btn popup__btn">Оставить отзыв</a>
+            <div class="checkbox-wrapper__text checkbox-wrapper__text-popup">
+              <div class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных</a>
+              </div>
+              <div class="checkbox-wrapper__text-2">Ваши данные не будут переданы третьим лицам</div>
+            </div>
+          </label>
+          <button type="submit" class="btn popup__btn">Оставить отзыв</button>
+        </form>
       </div>
     </div>
   </div>
