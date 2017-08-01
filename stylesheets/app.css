@@ -1602,8 +1602,9 @@ span.checkbox__yes {
   .checkbox span {
     font-size: 12px; }
   span.checkbox__yes {
-    top: -3px;
-    left: 4px; }
+    top: -1px;
+    left: 4px;
+    font-size: 11px; }
   .checkbox-wrapper {
     margin-bottom: 32px; }
   .checkbox-wrapper__text {

@@ -349,7 +349,7 @@ checkBox1.change(function () {
     (0, _jquery2.default)('.checkbox__yes').css("display", "block");
   } else {
     (0, _jquery2.default)('.checkbox__circle').animate({ "left": "0" }, "fast");
-    (0, _jquery2.default)('.checkbox__yes').animate("display", "block");
+    (0, _jquery2.default)('.checkbox__yes').css("display", "none");
   }
 });
 
