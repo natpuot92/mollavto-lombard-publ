@@ -1197,14 +1197,15 @@ html.fp-enabled,
   width: 300px; }
 
 .page-header__logo {
+  position: relative;
   display: inline-block;
   width: 188px;
   height: 41px;
   margin-right: 5.4%;
   background: url("../images/logo-white.png") no-repeat center;
   background-size: contain;
-  -webkit-transition-duration: .7s;
-          transition-duration: .7s; }
+  -webkit-transition: background-image .7s;
+  transition: background-image .7s; }
 
 .page-header-wrapper {
   display: table-cell;
@@ -1459,6 +1460,7 @@ html.fp-enabled,
 
 .section1__form-checkbox {
   position: absolute;
+  left: -1900px;
   display: block;
   width: 0;
   height: 0; }
