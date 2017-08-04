@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__logo-wrapper"><a href="#" class="page-header__logo page-header__logo-bg"></a></div>
+    <div class="page-header__logo-wrapper"><a href="#page-1" class="page-header__logo page-header__logo-bg"></a></div>
     <div class="page-header__location-time-wrapper">
       <div class="page-header__location"><span></span>454048, г. Челябинск, ул. Образцова, 25</div>
       <div class="page-header__time"><span></span> с пн.-пт. с 9-00 до 19-00</div>
@@ -21,8 +21,7 @@
       <div class="menu-btn"><a href="#" class="burger"></a></div>
     </div>
   </header>
-  <div class="main-nav__blur hidden"></div>
-  <div class="page-header main-nav hidden">
+  <div class="main-nav hidden">
     <div class="main-nav__btn-close"></div>
     <ul>
       <li><a href="#page-1" class="main-nav__link">Home</a></li>
@@ -38,7 +37,7 @@
     </ul>
   </div>
   <div id="fullpage">
-    <div class="section section1">
+    <div id="section-1" class="section section1">
       <div class="container">
         <div class="section__title section1-title">
           <div class="section1__title1">ДЕНЬГИ ПОД ПТС</div>
@@ -73,18 +72,20 @@
         </div>
       </div>
     </div>
-    <div class="section section2">
+    <div id="section-2" class="section section2">
       <div class="container">
         <div class="section2__container-wrapper">
-          <div class="section2__title-wrapper">
-            <div class="section__title section2__title">процесс получения займа</div>
-            <div class="section2__text">Три простых шага к получению нужной Вам денежной суммы</div><a href="#" class="btn section2__form-btn">Получить займ</a>
-          </div>
-          <div class="section2__item section2__item-3">
-            <div class="section2__item-icon section2__item-icon-3"></div>
-            <div class="section2__item-text-wrapper">
-              <div class="section2__item-digit">03</div>
-              <div class="section2__item-text">Приезжайте<br class="section2__item-text">за своими деньгами</div>
+          <div class="section2__items-wrapper">
+            <div class="section2__title-wrapper">
+              <div class="section__title section2__title">процесс получения займа</div>
+              <div class="section2__text">Три простых шага к получению нужной Вам денежной суммы</div><a href="#" class="btn section2__form-btn">Получить займ</a>
+            </div>
+            <div class="section2__item section2__item-3">
+              <div class="section2__item-icon section2__item-icon-3"></div>
+              <div class="section2__item-text-wrapper">
+                <div class="section2__item-digit">03</div>
+                <div class="section2__item-text">Приезжайте<br class="section2__item-text">за своими деньгами</div>
+              </div>
             </div>
           </div>
           <div class="section2__items-wrapper">
@@ -114,58 +115,60 @@
         </div>
       </div>
     </div>
-    <div class="section section3">
+    <div id="section-3" class="section section3">
       <div class="container">
         <div class="section__title section3-title">преимущества</div>
         <div class="section3__text">Почему Вам  выгодно взять займ у нас</div>
-        <div class="section3__big-slider">
-          <div class="big-slider__slide big-slider__slide-1">
-            <div class="big-slider__slide-circle"></div><img src="./images/features-slide1.png" class="big-slider__slide-foto-1">
-          </div>
-          <div class="big-slider__slide big-slider__slide-2">
-            <div class="big-slider__slide-circle"></div><img src="./images/features-slide2.png" class="big-slider__slide-foto-2">
-          </div>
-          <div class="big-slider__slide big-slider__slide-3">
-            <div class="big-slider__slide-circle"></div><img src="./images/features-slide3.png" class="big-slider__slide-foto-3">
-          </div>
-          <div class="big-slider__slide big-slider__slide-4">
-            <div class="big-slider__slide-circle"></div><img src="./images/features-slide4.png" class="big-slider__slide-foto-4">
-            <div class="big-slider__slide-foto-4-img"></div>
-          </div>
-          <div class="big-slider__slide big-slider__slide-5">
-            <div class="big-slider__slide-circle"></div><img src="./images/features-slide5.png" class="big-slider__slide-foto-5">
-          </div>
-        </div>
-        <div class="section3__slider-counter-wrapper">
-          <div class="section3__min-slider">
-            <div class="min-slider__slide-1">
-              <div class="min-slider__icon min-slider__icon-1"><img src="./images/features-icon1.png" class="min-slider__slide-foto-1"></div>
-              <div class="min-slider__text">Не требуем генеральной доверенности и договор купли-продажи</div>
+        <div class="section3__content">
+          <div class="section3__big-slider">
+            <div class="big-slider__slide big-slider__slide-1">
+              <div class="big-slider__slide-circle"></div><img src="./images/features-slide1.png" class="big-slider__slide-foto-1">
             </div>
-            <div class="min-slider__slide-2">
-              <div class="min-slider__icon min-slider__icon-2"><img src="./images/features-icon2.png" class="min-slider__slide-foto-2"></div>
-              <div class="min-slider__text">Пересчет процентов<br class="min-slider__text">за пользование займом по дням</div>
+            <div class="big-slider__slide big-slider__slide-2">
+              <div class="big-slider__slide-circle"></div><img src="./images/features-slide2.png" class="big-slider__slide-foto-2">
             </div>
-            <div class="min-slider__slide-3">
-              <div class="min-slider__icon min-slider__icon-3"><img src="./images/features-icon3.png" class="min-slider__slide-foto-3"></div>
-              <div class="min-slider__text">При заключении договора,<br class="min-slider__text">деньги наличными сразу</div>
+            <div class="big-slider__slide big-slider__slide-3">
+              <div class="big-slider__slide-circle"></div><img src="./images/features-slide3.png" class="big-slider__slide-foto-3">
             </div>
-            <div class="min-slider__slide-4">
-              <div class="min-slider__icon min-slider__icon-4"><img src="./images/features-icon3.png" class="min-slider__slide-foto-4"></div>
-              <div class="min-slider__text">Высокая лояльность к клиентам</div>
+            <div class="big-slider__slide big-slider__slide-4">
+              <div class="big-slider__slide-circle"></div><img src="./images/features-slide4.png" class="big-slider__slide-foto-4">
+              <div class="big-slider__slide-foto-4-img"></div>
             </div>
-            <div class="min-slider__slide-5">
-              <div class="min-slider__icon min-slider__icon-5"><img src="./images/features-icon3.png" class="min-slider__slide-foto-5"></div>
-              <div class="min-slider__text">Работаем официально, состоим<br class="min-slider__text">на учете в ЦБ</div>
+            <div class="big-slider__slide big-slider__slide-5">
+              <div class="big-slider__slide-circle"></div><img src="./images/features-slide5.png" class="big-slider__slide-foto-5">
             </div>
           </div>
-          <div class="section3__counter"><span class="section3__counter-big">01</span> <span class="section3__counter-min"></span>
+          <div class="section3__slider-counter-wrapper">
+            <div class="section3__min-slider">
+              <div class="min-slider__slide-1">
+                <div class="min-slider__icon min-slider__icon-1"><img src="./images/features-icon1.png" class="min-slider__slide-foto-1"></div>
+                <div class="min-slider__text">Не требуем генеральной доверенности и договор купли-продажи</div>
+              </div>
+              <div class="min-slider__slide-2">
+                <div class="min-slider__icon min-slider__icon-2"><img src="./images/features-icon2.png" class="min-slider__slide-foto-2"></div>
+                <div class="min-slider__text">Пересчет процентов<br class="min-slider__text">за пользование займом по дням</div>
+              </div>
+              <div class="min-slider__slide-3">
+                <div class="min-slider__icon min-slider__icon-3"><img src="./images/features-icon3.png" class="min-slider__slide-foto-3"></div>
+                <div class="min-slider__text">При заключении договора,<br class="min-slider__text">деньги наличными сразу</div>
+              </div>
+              <div class="min-slider__slide-4">
+                <div class="min-slider__icon min-slider__icon-4"><img src="./images/features-icon3.png" class="min-slider__slide-foto-4"></div>
+                <div class="min-slider__text">Высокая лояльность к клиентам</div>
+              </div>
+              <div class="min-slider__slide-5">
+                <div class="min-slider__icon min-slider__icon-5"><img src="./images/features-icon3.png" class="min-slider__slide-foto-5"></div>
+                <div class="min-slider__text">Работаем официально, состоим<br class="min-slider__text">на учете в ЦБ</div>
+              </div>
+            </div>
+            <div class="section3__counter"><span class="section3__counter-big">01</span> <span class="section3__counter-min"></span>
+            </div>
+            <div class="section3-slider__arrows"></div>
           </div>
-          <div class="section3-slider__arrows"></div>
         </div>
       </div>
     </div>
-    <div class="section section4">
+    <div id="section-4" class="section section4">
       <div class="container">
         <div class="section__title section4__title">ставки, условия</div>
         <div class="section4__text">Меньше сроки - меньше процент!</div>
@@ -196,7 +199,7 @@
         </div>
       </div>
     </div>
-    <div class="section section5">
+    <div id="section-5" class="section section5">
       <div class="container">
         <div class="section__title section5__title">о компании</div>
         <div class="section5__text">
@@ -207,7 +210,7 @@
         </div><a href="#" class="btn section5__btn">Получить займ</a>
       </div>
     </div>
-    <div class="section section6">
+    <div id="section-6" class="section section6">
       <div class="container">
         <div class="section__title section6__title">условия займа</div>
         <div class="section6__text">Необходимые требования для получения займа</div>
@@ -255,14 +258,17 @@
         </div>
       </div>
     </div>
-    <div class="section section7">
+    <div id="section-7" class="section section7">
       <div class="container">
         <div class="section__title section7__title">лицензии и документы</div>
         <div class="section7__text">Взяв у нас займ, Вы ни чем не рискуете. Мы работаем открыто!</div><a href="#" class="btn section7__btn">Получить займ</a>
-        <div class="section7__license-wrapper"><a href="./images/license-1.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-1.png"></a><a href="./images/license-2.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-2.png"></a><a href="./images/license-3.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-3.png"></a><a href="./images/license-4.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-4.png"></a><a href="./images/license-5.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-5.png"></a><a href="./images/license-6.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-6.png"></a><a href="./images/license-7.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-7.png"></a><a href="./images/license-8-b.jpg" rel="lightbox-group" class="funcybox-section7"><img src="images/license-8.png"></a></div>
+        <div class="section7__license-wrapper">
+          <div class="section7__inner"><a href="./images/license-1.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-1.png"></a><a href="./images/license-2.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-2.png"></a><a href="./images/license-3.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-3.png"></a><a href="./images/license-4.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-4.png"></a></div>
+          <div class="section7__inner"><a href="./images/license-5.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-5.png"></a><a href="./images/license-6.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-6.png"></a><a href="./images/license-7.png" rel="lightbox-group" class="funcybox-section7"><img src="images/license-7.png"></a><a href="./images/license-8-b.jpg" rel="lightbox-group" class="funcybox-section7"><img src="images/license-8.png"></a></div>
+        </div>
       </div>
     </div>
-    <div class="section section8">
+    <div id="section-8" class="section section8">
       <div class="container section8-container">
         <div class="section__title section8__title">часто задаваемые вопросы</div>
         <div class="section8__ask-wrapper">
@@ -274,7 +280,7 @@
         </div>
       </div>
     </div>
-    <div class="section section9">
+    <div id="section-9" class="section section9">
       <div class="container">
         <div class="section__title section9__title">отзывы клиентов о работе с нами</div>
         <div class="section9__slider">
@@ -332,7 +338,7 @@
         </div><a href="#" class="btn section9__btn">Оставить отзыв</a>
       </div>
     </div>
-    <div class="section section10">
+    <div id="section-10" class="section section10">
       <div class="container section10__container">
         <div class="section10__wrapper-desc">
           <div class="section__title section10__title">контакты</div>
