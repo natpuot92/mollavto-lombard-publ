@@ -1,1 +1,655 @@
-!function(){"use strict";var e="undefined"==typeof global?self:global;if("function"!=typeof e.require){var t={},a={},n={},o={}.hasOwnProperty,s=/^\.\.?(\/|$)/,i=function(e,t){for(var a,n=[],o=(s.test(t)?e+"/"+t:t).split("/"),i=0,c=o.length;i<c;i++)a=o[i],".."===a?n.pop():"."!==a&&""!==a&&n.push(a);return n.join("/")},c=function(e){return e.split("/").slice(0,-1).join("/")},r=function(t){return function(a){var n=i(c(t),a);return e.require(n,t)}},l=function(e,t){var n=h&&h.createHot(e),o={id:e,exports:{},hot:n};return a[e]=o,t(o.exports,r(e),o),o.exports},u=function(e){return n[e]?u(n[e]):e},p=function(e,t){return u(i(c(e),t))},d=function(e,n){null==n&&(n="/");var s=u(e);if(o.call(a,s))return a[s].exports;if(o.call(t,s))return l(s,t[s]);throw new Error("Cannot find module '"+e+"' from '"+n+"'")};d.alias=function(e,t){n[t]=e};var _=/\.[^.\/]+$/,f=/\/index(\.[^\/]+)?$/,b=function(e){if(_.test(e)){var t=e.replace(_,"");o.call(n,t)&&n[t].replace(_,"")!==t+"/index"||(n[t]=e)}if(f.test(e)){var a=e.replace(f,"");o.call(n,a)||(n[a]=e)}};d.register=d.define=function(e,n){if(e&&"object"==typeof e)for(var s in e)o.call(e,s)&&d.register(s,e[s]);else t[e]=n,delete a[e],b(e)},d.list=function(){var e=[];for(var a in t)o.call(t,a)&&e.push(a);return e};var h=e._hmr&&new e._hmr(p,d,t,a);d._cache=a,d.hmr=h&&h.wrap,d.brunch=!0,e.require=d}}(),function(){"undefined"==typeof window?this:window;require.register("initialize.js",function(e,t,a){"use strict";function n(e){return e&&e.__esModule?e:{"default":e}}var o=t("jquery"),s=n(o),i=t("fullpage.js"),c=(n(i),t("slick-carousel")),r=(n(c),t("fancybox")),l=n(r),u=t("jquery-validation"),p=(n(u),t("html2canvas")),d=(n(p),(0,s["default"])(".main-nav li a"));(0,s["default"])(document).ready(function(e){e("#fullpage").fullpage({anchors:["page-1","page-2","page-3","page-4","page-5","page-6","page-7","page-8","page-9","page-10"],menu:" #menu",navigation:!0,navigationPosition:"left",responsiveWidth:961,afterLoad:function(t){if("page-1"===t){var a=400,n=e(".section1__features-item");n.each(function(t){e(this).delay(a*t).queue(function(){e(this).addClass("fadeInUp").dequeue()})})}if("page-1"!==t&&(e(".section1__features-item").css("opacity",0),e(".section1__features-item").removeClass("fadeInUp")),"page-2"===t){var o=function(e){s[e].classList.add("fadeInUp")},a=400,n=e(".section2__item"),s=[];s[0]=n[1],s[1]=n[2],s[2]=n[0];for(var i=0;s.length>i;i++){var c=a*i;setTimeout(o,c,i)}}if("page-2"!==t&&(e(".section2__item").css("opacity",0),e(".section2__item").removeClass("fadeInUp")),"page-4"===t){var a=300,n=e(".section4__seven, .section4__passport-item");n.each(function(t){e(this).delay(a*t).queue(function(){e(this).addClass("fadeIn").dequeue()})})}if("page-4"!==t&&(e(".section4__seven, .section4__passport-item").css("opacity",0),e(".section4__seven, .section4__passport-item").removeClass("fadeIn")),"page-6"===t){var a=300,n=e(".section6__passport-item");n.each(function(t){e(this).delay(a*t).queue(function(){e(this).addClass("fadeIn").dequeue()})})}if("page-6"!==t&&(e(".section6__passport-item").css("opacity",0),e(".section6__passport-item").removeClass("fadeIn")),"page-7"===t){var a=300,n=e(".funcybox-section7");n.each(function(t){e(this).delay(a*t).queue(function(){e(this).addClass("fadeInUp").dequeue()})})}if("page-7"!==t&&(e(".funcybox-section7").css("opacity",0),e(".funcybox-section7").removeClass("fadeInUp")),"page-8"===t){var a=100,n=e(".section8__ask");n.each(function(t){e(this).delay(a*t).queue(function(){e(this).addClass("fadeInUpAsk").dequeue()})})}if("page-8"!==t&&(e(".section8__ask").css("opacity",0),e(".section8__ask").removeClass("fadeInUpAsk")),"page-10"===t){var a=100,n=e(".section10-item");n.each(function(t){e(this).delay(a*t).queue(function(){e(this).addClass("fadeInUp").dequeue()})})}"page-10"!==t&&(e(".section10-item").css("opacity",0),e(".section10-item").removeClass("fadeInUp"))},onLeave:function(t,a){if(1===a||3===a||5===a||7===a||9===a){e(".page-header").css("color","#ffffff"),e(".page-header__mail a").css("color","#ffffff"),e(".page-header__tel-btn").css("color","#ffffff"),e(".main-nav").css("background","rgba(0,0,0,0.8)"),e(".page-header__logo").css("background-image",'url("./images/logo-white.png")'),e(".page-header__logo").css("background-repeat","no-repeat"),e(".burger").css("background-image",'url("./images/burger-white.png")'),e(".page-header__logo").css("background-size","contain"),e(".main-nav li a").css("color","#ffffff"),e(".main-nav__btn-close").css("background-image",'url("./images/main-nav-close-white.png")'),e(".main-nav__blur").css("background-color","rgba(0,0,0,0.8)"),e(document).width()<961&&e(".page-header").css("background-color","rgba(0, 0, 0, 0.5)");for(var n=0;d.length>n;n++)d[n].addEventListener("mouseenter",function(e){e.target.style.color="#accc3d"}),d[n].addEventListener("mouseout",function(e){e.target.style.color="#ffffff"})}else{e(".page-header").css("color","#000000"),e(".page-header__mail a").css("color","#000000"),e(".page-header__tel-btn").css("color","#000000"),e(".main-nav").css("background","rgba(255,255,255,0.9)"),e(".page-header__logo").css("background-image",'url("./images/logo-black.png")'),e(".page-header__logo").css("background-size","contain"),e(".page-header__logo").css("background-repeat","no-repeat"),e(".burger").css("background-image",'url("./images/burger-black.png")'),e(".main-nav li a").css("color","#000000"),e(".main-nav__btn-close").css("background-image",'url("./images/main-nav-close-black.png")'),e(".main-nav__blur").css("background-color","rgba(255,255,255,0.8)"),e(document).width()<961&&e(".page-header").css("background-color","rgba(255, 255, 255, 0.5)");for(var n=0;d.length>n;n++)d[n].addEventListener("mouseenter",function(e){e.target.style.color="#accc3d"}),d[n].addEventListener("mouseout",function(e){e.target.style.color="#000000"})}}})}),(0,s["default"])(".main-nav__btn-close").click(function(){(0,s["default"])(".main-nav").removeClass("menu-left"),(0,s["default"])(".main-nav").addClass("menu-right")}),(0,s["default"])(".burger").click(function(){(0,s["default"])(".main-nav").addClass("menu-left"),(0,s["default"])(".main-nav").removeClass("hidden")}),(0,s["default"])(".page-header__tel-btn").click(function(){(0,s["default"])(".popup__phone").removeClass("hidden")}),(0,s["default"])(".section2__form-btn").click(function(){(0,s["default"])(".popup__phone").removeClass("hidden")}),(0,s["default"])(".section5__btn").click(function(){(0,s["default"])(".popup__phone").removeClass("hidden")}),(0,s["default"])(".section7__btn").click(function(){(0,s["default"])(".popup__phone").removeClass("hidden")}),(0,s["default"])(".section8__btn").click(function(){(0,s["default"])(".popup__ask").removeClass("hidden")}),(0,s["default"])(".section9__btn").click(function(){(0,s["default"])(".popup__review").removeClass("hidden")}),(0,s["default"])(".section10__btn").click(function(){(0,s["default"])(".popup__phone").removeClass("hidden")}),(0,s["default"])(".popup__btn-close").click(function(){(0,s["default"])(".popup__phone").addClass("hidden"),(0,s["default"])(".popup__ask").addClass("hidden"),(0,s["default"])(".popup__review").addClass("hidden"),(0,s["default"])(".popup__success-phone").addClass("hidden"),(0,s["default"])(".popup__success-ask").addClass("hidden"),(0,s["default"])(".popup__success-review").addClass("hidden"),(0,s["default"])(".popup__slider").addClass("hidden")}),(0,s["default"])(".section3__counter-min").text("0"+(0,s["default"])(".section3__big-slider .big-slider__slide").length),(0,s["default"])(".section3__big-slider").slick({arrows:!1,infinite:!1,asNavFor:".section3__min-slider",focusOnSelect:!1}),(0,s["default"])(".section3__min-slider").slick({autoplay:!0,autoplaySpeed:5e3,infinite:!1,appendArrows:(0,s["default"])(".section3-slider__arrows"),prevArrow:'<button id="prev" type="button" class="btn section3-btn-prev"><span class = "section3-btn-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',nextArrow:'<button id="next" type="button" class="btn section3-btn-next"><span class = "section3-btn-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>',asNavFor:".section3__big-slider"}),(0,s["default"])(".section3__big-slider").on("beforeChange",function(e,t,a,n){(0,s["default"])(".section3__counter-big").text("0"+(n+1))}),(0,s["default"])(".section3__big-slider").on("afterChange",function(e,t,a){var n=(0,s["default"])(".big-slider__slide-foto");(0,s["default"])(n[a-1]).removeClass("fadeInRight"),(0,s["default"])(n[a+1]).removeClass("fadeInRight")}),(0,s["default"])(".section9__counter-min").text("0"+(0,s["default"])(".section9__slide").length),(0,s["default"])(".section9__slider").slick({slidesToShow:1,slidesToScroll:1,infinite:!1,appendArrows:(0,s["default"])(".section9-slider__arrows"),prevArrow:'<button id="prev" type="button" class="btn section3-btn-prev"><span class = "section3-btn-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',nextArrow:'<button id="next" type="button" class="btn section3-btn-next"><span class = "section3-btn-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>',autoplay:!0,autoplaySpeed:5e3,pauseOnHover:!0}),(0,s["default"])(".section9__slider").on("beforeChange",function(e,t,a,n){(0,s["default"])(".section9__counter-big").text("0"+(n+1))}),(0,s["default"])(".popup__slids").slick({slidesToShow:1,slidesToScroll:1,fade:!0,variableWidth:!0,appendArrows:(0,s["default"])(".popup-slider__arrows"),prevArrow:'<button id="prev" type="button" class="btn section3-btn-prev popup-slider-prev"><span class = "section3-btn-prev-text popup__slider-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',nextArrow:'<button id="next" type="button" class="btn section3-btn-next popup-slider-next"><span class = "section3-btn-next-text popup__slider-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>'}),(0,s["default"])(".popup__slider__counter-min").text((0,s["default"])(".popup__slid").length),(0,s["default"])(".popup__slids").on("beforeChange",function(e,t,a,n){n+1<10?(0,s["default"])(".popup__slider__counter-big").text("0"+(n+1)):(0,s["default"])(".popup__slider__counter-big").text(n+1)});var _=(0,s["default"])(".section1__form-checkbox");_.change(function(){_.prop("checked")?(0,s["default"])(".checkbox__circle").animate({left:"23px"},"fast",function(){(0,s["default"])(".checkbox__yes").css("display","block"),(0,s["default"])(".checkbox__no").css("display","none"),(0,s["default"])(".section1__form-btn").prop("disabled",!1)}):(0,s["default"])(".checkbox__circle").animate({left:"0"},"fast",function(){(0,s["default"])(".checkbox__yes").css("display","none"),(0,s["default"])(".checkbox__no").css("display","block"),(0,s["default"])(".section1__form-btn").prop("disabled",!0)})});var f=(0,s["default"])(".popup__phone .section1__form-checkbox");f.change(function(){f.prop("checked")?(0,s["default"])(".popup__phone .checkbox__circle").animate({left:"23px"},"fast",function(){(0,s["default"])(".popup__phone .checkbox__yes").css("display","block"),(0,s["default"])(".popup__phone .checkbox__no").css("display","none"),(0,s["default"])(".popup__btn").prop("disabled",!1)}):(0,s["default"])(".popup__phone .checkbox__circle").animate({left:"0"},"fast",function(){(0,s["default"])(".popup__phone .checkbox__yes").css("display","none"),(0,s["default"])(".popup__phone .checkbox__no").css("display","block"),(0,s["default"])(".popup__btn").prop("disabled",!0)})});var b=(0,s["default"])(".popup__ask .section1__form-checkbox");b.change(function(){b.prop("checked")?(0,s["default"])(".popup__ask .checkbox__circle").animate({left:"23px"},"fast",function(){(0,s["default"])(".popup__ask .checkbox__yes").css("display","block"),(0,s["default"])(".checkbox__no").css("display","none"),(0,s["default"])(".popup__btn").prop("disabled",!1)}):(0,s["default"])(".popup__ask .checkbox__circle").animate({left:"0"},"fast",function(){(0,s["default"])(".popup__ask .checkbox__yes").css("display","none"),(0,s["default"])(".checkbox__no").css("display","block"),(0,s["default"])(".popup__btn").prop("disabled",!0)})});var h=(0,s["default"])(".popup__review .section1__form-checkbox");h.change(function(){h.prop("checked")?(0,s["default"])(".popup__review .checkbox__circle").animate({left:"23px"},"fast",function(){(0,s["default"])(".popup__review .checkbox__yes").css("display","block"),(0,s["default"])(".checkbox__no").css("display","none"),(0,s["default"])(".popup__btn").prop("disabled",!1)}):(0,s["default"])(".popup__review .checkbox__circle").animate({left:"0"},"fast",function(){(0,s["default"])(".popup__review .checkbox__yes").css("display","none"),(0,s["default"])(".checkbox__no").css("display","block"),(0,s["default"])(".popup__btn").prop("disabled",!0)})});var g=(0,s["default"])(".section8__ask");g.each(function(e,t){(0,s["default"])(t).click(function(e){var t=(0,s["default"])(e.target).attr("data-slide");(0,s["default"])(".popup__slider").removeClass("hidden"),(0,s["default"])(".popup__slids").slick("slickGoTo",t)})}),(0,l["default"])(s["default"]),(0,s["default"])(document).ready(function(){(0,s["default"])("a[rel=lightbox-group]").fancybox({helpers:{overlay:{css:{background:"rgba(255,255,255,0.5)"}}}})}),(0,s["default"])("#section1__form").validate({rules:{your__name:{required:!0},your__tel:{required:!0,digits:!0},section1__checkbox:{required:!0}},errorPlacement:function(e,t){return!0},submitHandler:function(e){}}),(0,s["default"])("#popup__phone-form").validate({rules:{phone__name:{required:!0},phone__tel:{required:!0,digits:!0},popup__phone__checkbox:{required:!0}},errorPlacement:function(e,t){return!0}}),(0,s["default"])("#popup__ask-form").validate({rules:{ask__name:{required:!0},ask__email:{required:!0,email:!0},ask__area:{required:!0},popup__ask__checkbox:{required:!0}},errorPlacement:function(e,t){return!0}}),(0,s["default"])("#popup__review-form").validate({rules:{review__name:{required:!0},review__area:{required:!0},popup__review__checkbox:{required:!0}},errorPlacement:function(e,t){return!0}})}),require.register("___globals___",function(e,t,a){})}(),require("___globals___");
+(function() {
+  'use strict';
+
+  var globals = typeof global === 'undefined' ? self : global;
+  if (typeof globals.require === 'function') return;
+
+  var modules = {};
+  var cache = {};
+  var aliases = {};
+  var has = {}.hasOwnProperty;
+
+  var expRe = /^\.\.?(\/|$)/;
+  var expand = function(root, name) {
+    var results = [], part;
+    var parts = (expRe.test(name) ? root + '/' + name : name).split('/');
+    for (var i = 0, length = parts.length; i < length; i++) {
+      part = parts[i];
+      if (part === '..') {
+        results.pop();
+      } else if (part !== '.' && part !== '') {
+        results.push(part);
+      }
+    }
+    return results.join('/');
+  };
+
+  var dirname = function(path) {
+    return path.split('/').slice(0, -1).join('/');
+  };
+
+  var localRequire = function(path) {
+    return function expanded(name) {
+      var absolute = expand(dirname(path), name);
+      return globals.require(absolute, path);
+    };
+  };
+
+  var initModule = function(name, definition) {
+    var hot = hmr && hmr.createHot(name);
+    var module = {id: name, exports: {}, hot: hot};
+    cache[name] = module;
+    definition(module.exports, localRequire(name), module);
+    return module.exports;
+  };
+
+  var expandAlias = function(name) {
+    return aliases[name] ? expandAlias(aliases[name]) : name;
+  };
+
+  var _resolve = function(name, dep) {
+    return expandAlias(expand(dirname(name), dep));
+  };
+
+  var require = function(name, loaderPath) {
+    if (loaderPath == null) loaderPath = '/';
+    var path = expandAlias(name);
+
+    if (has.call(cache, path)) return cache[path].exports;
+    if (has.call(modules, path)) return initModule(path, modules[path]);
+
+    throw new Error("Cannot find module '" + name + "' from '" + loaderPath + "'");
+  };
+
+  require.alias = function(from, to) {
+    aliases[to] = from;
+  };
+
+  var extRe = /\.[^.\/]+$/;
+  var indexRe = /\/index(\.[^\/]+)?$/;
+  var addExtensions = function(bundle) {
+    if (extRe.test(bundle)) {
+      var alias = bundle.replace(extRe, '');
+      if (!has.call(aliases, alias) || aliases[alias].replace(extRe, '') === alias + '/index') {
+        aliases[alias] = bundle;
+      }
+    }
+
+    if (indexRe.test(bundle)) {
+      var iAlias = bundle.replace(indexRe, '');
+      if (!has.call(aliases, iAlias)) {
+        aliases[iAlias] = bundle;
+      }
+    }
+  };
+
+  require.register = require.define = function(bundle, fn) {
+    if (bundle && typeof bundle === 'object') {
+      for (var key in bundle) {
+        if (has.call(bundle, key)) {
+          require.register(key, bundle[key]);
+        }
+      }
+    } else {
+      modules[bundle] = fn;
+      delete cache[bundle];
+      addExtensions(bundle);
+    }
+  };
+
+  require.list = function() {
+    var list = [];
+    for (var item in modules) {
+      if (has.call(modules, item)) {
+        list.push(item);
+      }
+    }
+    return list;
+  };
+
+  var hmr = globals._hmr && new globals._hmr(_resolve, require, modules, cache);
+  require._cache = cache;
+  require.hmr = hmr && hmr.wrap;
+  require.brunch = true;
+  globals.require = require;
+})();
+
+(function() {
+var global = typeof window === 'undefined' ? this : window;
+var __makeRelativeRequire = function(require, mappings, pref) {
+  var none = {};
+  var tryReq = function(name, pref) {
+    var val;
+    try {
+      val = require(pref + '/node_modules/' + name);
+      return val;
+    } catch (e) {
+      if (e.toString().indexOf('Cannot find module') === -1) {
+        throw e;
+      }
+
+      if (pref.indexOf('node_modules') !== -1) {
+        var s = pref.split('/');
+        var i = s.lastIndexOf('node_modules');
+        var newPref = s.slice(0, i).join('/');
+        return tryReq(name, newPref);
+      }
+    }
+    return none;
+  };
+  return function(name) {
+    if (name in mappings) name = mappings[name];
+    if (!name) return;
+    if (name[0] !== '.' && pref) {
+      var val = tryReq(name, pref);
+      if (val !== none) return val;
+    }
+    return require(name);
+  }
+};
+require.register("initialize.js", function(exports, require, module) {
+'use strict';
+
+var _jquery = require('jquery');
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _fullpage = require('fullpage.js');
+
+var _fullpage2 = _interopRequireDefault(_fullpage);
+
+var _slickCarousel = require('slick-carousel');
+
+var _slickCarousel2 = _interopRequireDefault(_slickCarousel);
+
+var _fancybox = require('fancybox');
+
+var _fancybox2 = _interopRequireDefault(_fancybox);
+
+var _jqueryValidation = require('jquery-validation');
+
+var _jqueryValidation2 = _interopRequireDefault(_jqueryValidation);
+
+var _html2canvas = require('html2canvas');
+
+var _html2canvas2 = _interopRequireDefault(_html2canvas);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var mainNavLinks = (0, _jquery2.default)('.main-nav li a');
+
+(0, _jquery2.default)(document).ready(function ($) {
+  $('#fullpage').fullpage({
+    anchors: ['page-1', 'page-2', 'page-3', 'page-4', 'page-5', 'page-6', 'page-7', 'page-8', 'page-9', 'page-10'],
+    menu: ' #menu',
+    navigation: true,
+    navigationPosition: 'left',
+    responsiveWidth: 961,
+    afterLoad: function afterLoad(page) {
+      if (page === 'page-1') {
+        var duration = 400;
+        var elements = $('.section1__features-item');
+        elements.each(function (index) {
+          $(this).delay(duration * index).queue(function () {
+            $(this).addClass('fadeInUp').dequeue();
+          });
+        });
+      };
+
+      if (!(page === 'page-1')) {
+        $('.section1__features-item').css('opacity', 0);
+        $('.section1__features-item').removeClass('fadeInUp');
+      };
+
+      if (page === 'page-2') {
+        var addFade = function addFade(index) {
+          elementsGoodPosition[index].classList.add('fadeInUp');
+        };
+
+        var duration = 400;
+        var elements = $('.section2__item');
+        var elementsGoodPosition = [];
+
+        elementsGoodPosition[0] = elements[1];
+        elementsGoodPosition[1] = elements[2];
+        elementsGoodPosition[2] = elements[0];
+
+        for (var i = 0; elementsGoodPosition.length > i; i++) {
+          var timeout = duration * i;
+          setTimeout(addFade, timeout, i);
+        };
+      };
+
+      if (!(page === 'page-2')) {
+        $('.section2__item').css('opacity', 0);
+        $('.section2__item').removeClass('fadeInUp');
+      };
+
+      if (page === 'page-4') {
+        var duration = 300;
+        var elements = $('.section4__seven, .section4__passport-item');
+
+        elements.each(function (index) {
+          $(this).delay(duration * index).queue(function () {
+            $(this).addClass('fadeIn').dequeue();
+          });
+        });
+      }
+
+      if (!(page === 'page-4')) {
+        $('.section4__seven, .section4__passport-item').css('opacity', 0);
+        $('.section4__seven, .section4__passport-item').removeClass('fadeIn');
+      };
+
+      if (page === 'page-6') {
+        var duration = 300;
+        var elements = $('.section6__passport-item');
+
+        elements.each(function (index) {
+          $(this).delay(duration * index).queue(function () {
+            $(this).addClass('fadeIn').dequeue();
+          });
+        });
+      }
+
+      if (!(page === 'page-6')) {
+        $('.section6__passport-item').css('opacity', 0);
+        $('.section6__passport-item').removeClass('fadeIn');
+      };
+
+      if (page === 'page-7') {
+        var duration = 300;
+        var elements = $('.funcybox-section7');
+
+        elements.each(function (index) {
+          $(this).delay(duration * index).queue(function () {
+            $(this).addClass('fadeInUp').dequeue();
+          });
+        });
+      }
+
+      if (!(page === 'page-7')) {
+        $('.funcybox-section7').css('opacity', 0);
+        $('.funcybox-section7').removeClass('fadeInUp');
+      };
+
+      if (page === 'page-8') {
+        var duration = 100;
+        var elements = $('.section8__ask');
+
+        elements.each(function (index) {
+          $(this).delay(duration * index).queue(function () {
+            $(this).addClass('fadeInUpAsk').dequeue();
+          });
+        });
+      }
+
+      if (!(page === 'page-8')) {
+        $('.section8__ask').css('opacity', 0);
+        $('.section8__ask').removeClass('fadeInUpAsk');
+      };
+
+      if (page === 'page-10') {
+        var duration = 100;
+        var elements = $('.section10-item');
+
+        elements.each(function (index) {
+          $(this).delay(duration * index).queue(function () {
+            $(this).addClass('fadeInUp').dequeue();
+          });
+        });
+      }
+
+      if (!(page === 'page-10')) {
+        $('.section10-item').css('opacity', 0);
+        $('.section10-item').removeClass('fadeInUp');
+      };
+    },
+    onLeave: function onLeave(link, index) {
+      if (index === 1 || index === 3 || index === 5 || index === 7 || index === 9) {
+        $('.page-header').css('color', '#ffffff');
+        $('.page-header__mail a').css('color', '#ffffff');
+        $('.page-header__tel-btn').css('color', '#ffffff');
+        $('.main-nav').css('background', 'rgba(0,0,0,0.8)');
+        $('.page-header__logo').css('background-image', 'url("./images/logo-white.png")');
+        $('.page-header__logo').css('background-repeat', 'no-repeat');
+        $('.burger').css('background-image', 'url("./images/burger-white.png")');
+        $('.page-header__logo').css('background-size', 'contain');
+        $('.main-nav li a').css('color', '#ffffff');
+        $('.main-nav__btn-close').css('background-image', 'url("./images/main-nav-close-white.png")');
+        $('.main-nav__blur').css('background-color', 'rgba(0,0,0,0.8)');
+
+        if ($(document).width() < 961) {
+          $('.page-header').css('background-color', 'rgba(0, 0, 0, 0.5)');
+        }
+
+        for (var i = 0; mainNavLinks.length > i; i++) {
+          mainNavLinks[i].addEventListener('mouseenter', function (evt) {
+            evt.target.style.color = '#accc3d';
+          });
+          mainNavLinks[i].addEventListener('mouseout', function (evt) {
+            evt.target.style.color = '#ffffff';
+          });
+        };
+      } else {
+        $('.page-header').css('color', '#000000');
+        $('.page-header__mail a').css('color', '#000000');
+        $('.page-header__tel-btn').css('color', '#000000');
+        $('.main-nav').css('background', 'rgba(255,255,255,0.9)');
+        $('.page-header__logo').css('background-image', 'url("./images/logo-black.png")');
+        $('.page-header__logo').css('background-size', 'contain');
+        $('.page-header__logo').css('background-repeat', 'no-repeat');
+        $('.burger').css('background-image', 'url("./images/burger-black.png")');
+        $('.main-nav li a').css('color', '#000000');
+        $('.main-nav__btn-close').css('background-image', 'url("./images/main-nav-close-black.png")');
+        $('.main-nav__blur').css('background-color', 'rgba(255,255,255,0.8)');
+
+        if ($(document).width() < 961) {
+          $('.page-header').css('background-color', 'rgba(255, 255, 255, 0.5)');
+        }
+
+        for (var i = 0; mainNavLinks.length > i; i++) {
+          mainNavLinks[i].addEventListener('mouseenter', function (evt) {
+            evt.target.style.color = '#accc3d';
+          });
+          mainNavLinks[i].addEventListener('mouseout', function (evt) {
+            evt.target.style.color = '#000000';
+          });
+        };
+      }
+    }
+  });
+});
+
+(0, _jquery2.default)('.main-nav__btn-close').click(function () {
+  (0, _jquery2.default)('.main-nav').removeClass('menu-left');
+  (0, _jquery2.default)('.main-nav').addClass('menu-right');
+});
+
+(0, _jquery2.default)('.burger').click(function () {
+  (0, _jquery2.default)('.main-nav').addClass('menu-left');
+  (0, _jquery2.default)('.main-nav').removeClass('hidden');
+});
+
+(0, _jquery2.default)('.page-header__tel-btn').click(function () {
+  (0, _jquery2.default)('.popup__phone').removeClass('hidden');
+});
+
+(0, _jquery2.default)('.section2__form-btn').click(function () {
+  (0, _jquery2.default)('.popup__phone').removeClass('hidden');
+});
+
+(0, _jquery2.default)('.section5__btn').click(function () {
+  (0, _jquery2.default)('.popup__phone').removeClass('hidden');
+});
+
+(0, _jquery2.default)('.section7__btn').click(function () {
+  (0, _jquery2.default)('.popup__phone').removeClass('hidden');
+});
+
+(0, _jquery2.default)('.section8__btn').click(function () {
+  (0, _jquery2.default)('.popup__ask').removeClass('hidden');
+});
+
+(0, _jquery2.default)('.section9__btn').click(function () {
+  (0, _jquery2.default)('.popup__review').removeClass('hidden');
+});
+
+(0, _jquery2.default)('.section10__btn').click(function () {
+  (0, _jquery2.default)('.popup__phone').removeClass('hidden');
+});
+
+(0, _jquery2.default)('.popup__btn-close').click(function () {
+  (0, _jquery2.default)('.popup__phone').addClass('hidden');
+  (0, _jquery2.default)('.popup__ask').addClass('hidden');
+  (0, _jquery2.default)('.popup__review').addClass('hidden');
+  (0, _jquery2.default)('.popup__success-phone').addClass('hidden');
+  (0, _jquery2.default)('.popup__success-ask').addClass('hidden');
+  (0, _jquery2.default)('.popup__success-review').addClass('hidden');
+  (0, _jquery2.default)('.popup__slider').addClass('hidden');
+});
+
+(0, _jquery2.default)('.section3__counter-min').text('0' + (0, _jquery2.default)('.section3__big-slider .big-slider__slide').length);
+
+(0, _jquery2.default)('.section3__big-slider').slick({
+  arrows: false,
+  //autoplay: true,
+  //autoplaySpeed: 5000,
+  infinite: false,
+  asNavFor: '.section3__min-slider',
+  focusOnSelect: false
+});
+
+(0, _jquery2.default)('.section3__min-slider').slick({
+  autoplay: true,
+  autoplaySpeed: 5000,
+  infinite: false,
+  appendArrows: (0, _jquery2.default)('.section3-slider__arrows'),
+  prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev"><span class = "section3-btn-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
+  nextArrow: '<button id="next" type="button" class="btn section3-btn-next"><span class = "section3-btn-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>',
+  asNavFor: '.section3__big-slider'
+});
+
+(0, _jquery2.default)('.section3__big-slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+  (0, _jquery2.default)('.section3__counter-big').text('0' + (nextSlide + 1));
+});
+
+(0, _jquery2.default)('.section3__big-slider').on('afterChange', function (event, slick, currentSlide) {
+  var imgFotos = (0, _jquery2.default)('.big-slider__slide-foto');
+  (0, _jquery2.default)(imgFotos[currentSlide - 1]).removeClass('fadeInRight');
+  (0, _jquery2.default)(imgFotos[currentSlide + 1]).removeClass('fadeInRight');
+});
+
+(0, _jquery2.default)('.section9__counter-min').text('0' + (0, _jquery2.default)('.section9__slide').length);
+
+(0, _jquery2.default)('.section9__slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: false,
+  appendArrows: (0, _jquery2.default)('.section9-slider__arrows'),
+  prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev"><span class = "section3-btn-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
+  nextArrow: '<button id="next" type="button" class="btn section3-btn-next"><span class = "section3-btn-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>',
+  autoplay: true,
+  autoplaySpeed: 5000,
+  pauseOnHover: true
+});
+
+(0, _jquery2.default)('.section9__slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+  (0, _jquery2.default)('.section9__counter-big').text('0' + (nextSlide + 1));
+});
+
+(0, _jquery2.default)('.popup__slids').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: true,
+  variableWidth: true,
+  appendArrows: (0, _jquery2.default)('.popup-slider__arrows'),
+  prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev popup-slider-prev"><span class = "section3-btn-prev-text popup__slider-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
+  nextArrow: '<button id="next" type="button" class="btn section3-btn-next popup-slider-next"><span class = "section3-btn-next-text popup__slider-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>'
+});
+
+(0, _jquery2.default)('.popup__slider__counter-min').text((0, _jquery2.default)('.popup__slid').length);
+
+(0, _jquery2.default)('.popup__slids').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+  if (nextSlide + 1 < 10) {
+    (0, _jquery2.default)('.popup__slider__counter-big').text('0' + (nextSlide + 1));
+  } else {
+    (0, _jquery2.default)('.popup__slider__counter-big').text(nextSlide + 1);
+  }
+});
+
+var checkBox1 = (0, _jquery2.default)('.section1__form-checkbox');
+checkBox1.change(function () {
+  if (checkBox1.prop('checked')) {
+    (0, _jquery2.default)('.checkbox__circle').animate({ "left": "23px" }, "fast", function () {
+      (0, _jquery2.default)('.checkbox__yes').css("display", "block");
+      (0, _jquery2.default)('.checkbox__no').css("display", "none");
+      (0, _jquery2.default)('.section1__form-btn').prop('disabled', false);
+    });
+  } else {
+    (0, _jquery2.default)('.checkbox__circle').animate({ "left": "0" }, "fast", function () {
+      (0, _jquery2.default)('.checkbox__yes').css("display", "none");
+      (0, _jquery2.default)('.checkbox__no').css("display", "block");
+      (0, _jquery2.default)('.section1__form-btn').prop('disabled', true);
+    });
+  };
+});
+
+var checkBox2 = (0, _jquery2.default)('.popup__phone .section1__form-checkbox');
+checkBox2.change(function () {
+  if (checkBox2.prop('checked')) {
+    (0, _jquery2.default)('.popup__phone .checkbox__circle').animate({ "left": "23px" }, "fast", function () {
+      (0, _jquery2.default)('.popup__phone .checkbox__yes').css("display", "block");
+      (0, _jquery2.default)('.popup__phone .checkbox__no').css("display", "none");
+      (0, _jquery2.default)('.popup__btn').prop('disabled', false);
+    });
+  } else {
+    (0, _jquery2.default)('.popup__phone .checkbox__circle').animate({ "left": "0" }, "fast", function () {
+      (0, _jquery2.default)('.popup__phone .checkbox__yes').css("display", "none");
+      (0, _jquery2.default)('.popup__phone .checkbox__no').css("display", "block");
+      (0, _jquery2.default)('.popup__btn').prop('disabled', true);
+    });
+  }
+});
+
+var checkBox3 = (0, _jquery2.default)('.popup__ask .section1__form-checkbox');
+checkBox3.change(function () {
+  if (checkBox3.prop('checked')) {
+    (0, _jquery2.default)('.popup__ask .checkbox__circle').animate({ "left": "23px" }, "fast", function () {
+      (0, _jquery2.default)('.popup__ask .checkbox__yes').css("display", "block");
+      (0, _jquery2.default)('.checkbox__no').css("display", "none");
+      (0, _jquery2.default)('.popup__btn').prop('disabled', false);
+    });
+  } else {
+    (0, _jquery2.default)('.popup__ask .checkbox__circle').animate({ "left": "0" }, "fast", function () {
+      (0, _jquery2.default)('.popup__ask .checkbox__yes').css("display", "none");
+      (0, _jquery2.default)('.checkbox__no').css("display", "block");
+      (0, _jquery2.default)('.popup__btn').prop('disabled', true);
+    });
+  }
+});
+
+var checkBox4 = (0, _jquery2.default)('.popup__review .section1__form-checkbox');
+checkBox4.change(function () {
+  if (checkBox4.prop('checked')) {
+    (0, _jquery2.default)('.popup__review .checkbox__circle').animate({ "left": "23px" }, "fast", function () {
+      (0, _jquery2.default)('.popup__review .checkbox__yes').css("display", "block");
+      (0, _jquery2.default)('.checkbox__no').css("display", "none");
+      (0, _jquery2.default)('.popup__btn').prop('disabled', false);
+    });
+  } else {
+    (0, _jquery2.default)('.popup__review .checkbox__circle').animate({ "left": "0" }, "fast", function () {
+      (0, _jquery2.default)('.popup__review .checkbox__yes').css("display", "none");
+      (0, _jquery2.default)('.checkbox__no').css("display", "block");
+      (0, _jquery2.default)('.popup__btn').prop('disabled', true);
+    });
+  }
+});
+
+var askElements = (0, _jquery2.default)('.section8__ask');
+
+askElements.each(function (i, element) {
+  (0, _jquery2.default)(element).click(function (evt) {
+    var slideNumber = (0, _jquery2.default)(evt.target).attr('data-slide');
+    (0, _jquery2.default)('.popup__slider').removeClass('hidden');
+    (0, _jquery2.default)('.popup__slids').slick('slickGoTo', slideNumber);
+  });
+});
+
+(0, _fancybox2.default)(_jquery2.default);
+
+(0, _jquery2.default)(document).ready(function () {
+  (0, _jquery2.default)("a[rel=lightbox-group]").fancybox({
+    helpers: {
+      overlay: {
+        css: {
+          'background': 'rgba(255,255,255,0.5)'
+        }
+      }
+    }
+  });
+});
+
+(0, _jquery2.default)("#section1__form").validate({
+  rules: {
+    your__name: {
+      required: true
+    },
+    your__tel: {
+      required: true,
+      digits: true
+    },
+    section1__checkbox: {
+      required: true
+    }
+  },
+  errorPlacement: function errorPlacement(error, element) {
+    return true;
+  },
+  submitHandler: function submitHandler(form) {}
+});
+
+(0, _jquery2.default)("#popup__phone-form").validate({
+  rules: {
+    phone__name: {
+      required: true
+    },
+    phone__tel: {
+      required: true,
+      digits: true
+    },
+    popup__phone__checkbox: {
+      required: true
+    }
+  },
+  errorPlacement: function errorPlacement(error, element) {
+    return true;
+  }
+});
+
+(0, _jquery2.default)("#popup__ask-form").validate({
+  rules: {
+    ask__name: {
+      required: true
+    },
+    ask__email: {
+      required: true,
+      email: true
+    },
+    ask__area: {
+      required: true
+    },
+    popup__ask__checkbox: {
+      required: true
+    }
+  },
+  errorPlacement: function errorPlacement(error, element) {
+    return true;
+  }
+});
+
+(0, _jquery2.default)("#popup__review-form").validate({
+  rules: {
+    review__name: {
+      required: true
+    },
+    review__area: {
+      required: true
+    },
+    popup__review__checkbox: {
+      required: true
+    }
+  },
+  errorPlacement: function errorPlacement(error, element) {
+    return true;
+  }
+});
+
+});
+
+require.register("___globals___", function(exports, require, module) {
+  
+});})();require('___globals___');
+
+
+//# sourceMappingURL=app.js.map
